@@ -1,0 +1,15 @@
+﻿<Window x:Class="Task3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TextBoxPath" HorizontalAlignment="Left" Height="32" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="672" Text="E:\Dropbox\dev\ITVDN\4 курс\HW4\Task3\text.txt"/>
+        <Button x:Name="ButtonRun" Content="Run" HorizontalAlignment="Left" Height="32" Margin="677,10,0,0" VerticalAlignment="Top" Width="113" Click="ButtonRun_Click"/>
+        <TextBox x:Name="TextBoxStatus" HorizontalAlignment="Left" Height="32" Margin="0,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="672" IsEnabled="False"/>
+
+    </Grid>
+</Window>

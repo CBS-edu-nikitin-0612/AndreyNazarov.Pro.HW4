@@ -1,0 +1,24 @@
+﻿<Window x:Class="Task2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="ListBoxLinks" HorizontalAlignment="Left" Margin="10,72,0,10" Width="291"/>
+        <ListBox x:Name="ListBoxPhoneNumbers" HorizontalAlignment="Left" Margin="306,72,0,10" Width="181"/>
+        <ListBox x:Name="ListBoxEmails" Margin="492,72,0,10" HorizontalAlignment="Left" Width="298"/>
+        <Grid Margin="10,10,10,0" Height="53" VerticalAlignment="Top">
+            <Grid  VerticalAlignment="Top" >
+                <TextBox x:Name="TextBoxPath" TextWrapping="Wrap" Text="https://autopiter.ru/contact/moscow" Height="24" VerticalAlignment="Center" Margin="0,0,97,0"/>
+                <Button x:Name="ButtonParse" Content="Parse" Height="24" VerticalAlignment="Center" Click="ButtonParse_Click" HorizontalAlignment="Right" Width="92"/>
+            </Grid>
+            <Grid Margin="0,29,0,0" VerticalAlignment="Top">
+                <TextBox x:Name="TextBoxStutus" Margin="0,0,97,0" TextWrapping="Wrap" IsEnabled="False" Height="24" VerticalAlignment="Center"/>
+                <Button x:Name="ButtonSave" Content="Save" Height="24" VerticalAlignment="Center" Click="ButtonSave_Click" HorizontalAlignment="Right" Width="92"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
